@@ -1,0 +1,30 @@
+.message_seller .container {
+    padding: 0 177px;
+}
+
+.message_seller .container .row {
+    margin: 20px 0;
+}
+
+.message_seller .container .row textarea {
+    width: 100%;
+    resize: none;
+}
+
+.send-message {
+    text-align: right
+}
+
+.send-message button {
+    background-color: #2e8103;
+    border-color: #2e8103;
+    width: 150px;
+    color: white;
+    margin-top: 15px;
+}
+
+@media (max-width: 991px) {
+    .message_seller .container {
+        padding: 0 15px;
+    }
+}

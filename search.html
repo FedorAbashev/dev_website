@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gator Aid</title>
+    <link rel="stylesheet" href="css/fontawesome-all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/search.css">
+</head>
+
+<body>
+    <div id="page-container">
+        <div id="content-wrap">
+            <header>
+                <div class="logo-wrapper text-center">
+                    <div class="disclaimer">
+                        <h2>For Demonstration Only</h2>
+                    </div>
+                    <div class="logo">
+                        <a href="./index.html"><img src="img/333.PNG" alt=""></a>
+                    </div>
+                </div>
+
+                <div class="header-divider"></div>
+                <div class="search-bar">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-2 col-sm-3 col-5 remove-padding-right">
+                                <select id="category-select" class="custom-select">
+                                    <option selected value=0>All</option>
+                                    <option value="1">Books</option>
+                                    <option value="2">Electronics</option>
+                                    <option value="3">Furniture</option>
+                                    <option value="4">Tutoring</option>
+                                    <option value="5">Other</option>
+                                </select>
+                            </div>
+                            <div class="col-md-10 col-sm-9 col-7 remove-padding-left">
+                                <form class="form-inline md-form form-md">
+                                    <input id="search-bar-input" class="form-control form-control-md w-100" type="text" placeholder="Search" aria-label="Search">
+                                    <a class='search-link' href="">
+                                        <div class="search-icon"><i class="fas fa-search" aria-hidden="true"></i></div>
+                                    </a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="navbar navbar-expand-lg navbar-light container">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <img class="close" src="img/close.svg" alt="">
+                        <ul class="navbar-nav d-flex justify-content-around">
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="./courseNumber.html"><span>Find Books By Course Number
+                                        <span class="sr-only">(current)</span></span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./sell.html"><span>Sell</span></a>
+                            </li>
+                            <div>
+                        <li class="nav-item">
+                                <a class="nav-link" href="" data-toggle="modal" data-target="#modalLoginForm"><span>Log
+                                        In</span></a>
+                            </li> </div>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+
+
+            <section class="search-results">
+
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 col-sm-6 col-6 d-flex align-items-end">
+                            <label>Showing <span class="search-number"> 5 </span> out of <span
+                                    class="search-number">35</span></label>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-2 d-flex align-items-end sort-by-title">
+                            <label>Sort By</label>
+                        </div>
+                        <div class="col-md-2 col-sm-4 col-4">
+                            <select id="sort-by" class="custom-select">
+                                <option selected>Date</option>
+                                <option value="1">Price</option>
+                            </select>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="container results">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-6 recent-items">
+                            <div class="card">
+                                <a href="listing2.html">
+                                    <img src="" alt="" class="img-thumbnail">
+                                </a>
+                                <div class="card-body">
+                                    <p class="product-desc card-title">Lorem ipsum dolor sit amet</p>
+                                    <p class="price card-text">$35.18</p>
+                                    <a href="./listing2.html" class="btn buy-now-btn">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-6 recent-items">
+                            <div class="card">
+                                <a href="listing2.html">
+                                    <img src="" alt="" class="img-thumbnail">
+                                </a>
+                                <div class="card-body">
+                                    <p class="product-desc card-title">Lorem ipsum dolor sit amet</p>
+                                    <p class="price card-text">$35.18</p>
+                                    <a href="./listing2.html" class="btn buy-now-btn">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-6 recent-items">
+                            <div class="card">
+                                <a href="listing2.html">
+                                    <img src="" alt="" class="img-thumbnail">
+                                </a>
+                                <div class="card-body">
+                                    <p class="product-desc card-title">Lorem ipsum dolor sit amet</p>
+                                    <p class="price card-text">$35.18</p>
+                                    <a href="./listing2.html" class="btn buy-now-btn">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-6 recent-items">
+                            <div class="card">
+                                <a href="listing2.html">
+                                    <img src="" alt="" class="img-thumbnail">
+                                </a>
+                                <div class="card-body">
+                                    <p class="product-desc card-title">Lorem ipsum dolor sit amet</p>
+                                    <p class="price card-text">$35.18</p>
+                                    <a href="./listing2.html" class="btn buy-now-btn">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-6 recent-items">
+                            <div class="card">
+                                <a href="listing2.html">
+                                    <img src="" alt="" class="img-thumbnail">
+                                </a>
+                                <div class="card-body">
+                                    <p class="product-desc card-title">Lorem ipsum dolor sit amet</p>
+                                    <p class="price card-text">$35.18</p>
+                                    <a href="./listing2.html" class="btn buy-now-btn">Buy Now</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+
+            <!--Log in Modal -->
+            <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header text-center">
+                            <p class="modal-title w-100">Sign in</p>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body mx-3">
+                            <div class="login-step md-form mb-5">
+                                <label data-error="wrong" data-success="right" for="defaultForm-email">Your
+                                    Username</label>
+                                <input type="text" id="defaultForm-email" class="form-control validate">
+                            </div>
+
+                            <div class="password-step md-form mb-4">
+                                <label data-error="wrong" data-success="right" for="defaultForm-pass">Your
+                                    password</label>
+                                <input type="password" id="defaultForm-pass" class="form-control validate">
+                            </div>
+                            <div class=" d-flex justify-content-center flex-column text-center">
+                                <div class="login-btn">
+                                    <button class="btn btn-default">Login</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" d-flex justify-content-center flex-column text-center">
+
+                            <div class="forgot-pass">
+                                <a href="">Forgot Password?</a>
+                            </div>
+                            <div class="register">
+                                <a data-toggle="modal" data-dismiss="modal" data-target="#modalRegisterForm" href="">Register</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header text-center">
+                            <p class="modal-title w-100">Create New Account</p>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body mx-3">
+                            <div class="login-step md-form mb-5">
+                                <label data-error="wrong" data-success="right" for="defaultForm-email-reg">SFSU
+                                    e-mail</label>
+                                <input type="email" id="defaultForm-email-reg" class="form-control validate">
+                            </div>
+                            <div class="login-step md-form mb-5">
+                                <label data-error="wrong" data-success="right" for="defaultForm-username-reg">Username</label>
+                                <input type="text" id="defaultForm-username-reg" class="form-control validate">
+                            </div>
+                            <div class="password-step md-form mb-5">
+                                <label data-error="wrong" data-success="right" for="defaultForm-pass-reg">Your
+                                    password</label>
+                                <input type="password" id="defaultForm-pass-reg" class="form-control validate">
+                            </div>
+                            <div class="password-step md-form mb-2">
+                                <label data-error="wrong" data-success="right" for="defaultForm-pass-confirm-reg">Confirm
+                                    password</label>
+                                <input type="password" id="defaultForm-pass-confirm-reg" class="form-control validate">
+                            </div>
+                            <div class=" d-flex justify-content-center flex-column text-center">
+                                <label class="container-checkbox">I agree to <a href="#">Terms & Conditions</a>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                </label>
+                                <div class="register-btn">
+                                    <button class="btn btn-default">Register</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <a href="AboutMePages/LandingPageVersion1.html">About Us</a>
+                <span>&copy; 2019 All rights reserved </span>
+                <a href="">Contact Us</a>
+            </div>
+        </footer>
+
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/index.js"></script>
+    </div>
+</body>
+
+</html>

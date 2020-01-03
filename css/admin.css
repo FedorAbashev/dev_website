@@ -1,0 +1,96 @@
+.listing-review,
+.view-existing,
+.view-listing {
+    margin-top: 30px;
+}
+
+.view-existing .content,
+.view-listing .content {
+    margin-top: 20px;
+}
+
+.sort-by-title {
+    justify-content: flex-end;
+    margin-left: 15px;
+}
+
+#sort-by {
+    border-right: 1px solid #ced4da;
+}
+
+.sort-by-title {
+    white-space: nowrap;
+}
+
+.table {
+    margin: 40px 15px 10px;
+}
+
+.carousel {
+    height: 100%;
+}
+
+.img-thumbnail {
+    width: 300px;
+    height: 195px;
+    background-color: #234F0C;
+}
+
+.nested-row {
+    max-width: 600px;
+}
+
+.item-delete,
+.item-approve,
+.item-reject {
+    text-align: center
+}
+
+.item-delete button,
+.item-approve button,
+.item-reject button {
+    background-color: #2e8103;
+    border-color: #2e8103;
+    width: 80%;
+    margin: 70px 0 0;
+}
+
+@media (min-width: 1200px) {
+    .desc-text {
+        margin-left: -47px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .nested-row {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 991px) {
+    .sort-by-title {
+        justify-content: flex-end;
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sort-by-title {
+        justify-content: flex-start;
+        margin-left: 0px;
+    }
+    .nested-row {
+        max-width: 100%;
+        width: 100%;
+        margin: 20px 0;
+        padding: 0 15px;
+    }
+    .item-delete button {
+        width: 100%;
+        margin: 20px 0 0;
+    }
+    .item-approve button,
+    .item-reject button {
+        margin: 10px 0 0;
+    }
+}

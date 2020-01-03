@@ -1,0 +1,156 @@
+.sell {
+    margin-top: 40px;
+}
+
+.post-listing {
+    display: flex;
+    justify-content: flex-end;
+}
+.post-listing1 {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.post-listing button {
+    background-color: #2e8103;
+    border-color: #2e8103;
+    width: 150px;
+    color: white;
+    margin-top: 15px;
+}
+.post-listing1 button {
+    background-color: #2e8103;
+    border-color: #2e8103;
+    width: 150px;
+    color: white;
+    margin-top: -35px;
+}
+
+.sell .container .row {
+    margin: 20px 0;
+}
+
+.sell .container .row textarea {
+    width: 100%;
+    resize: none
+}
+
+.sell .custom-select {
+    border-right: 1px solid #ced4da;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+.sell .container {
+    padding: 0 177px;
+}
+
+.select-sell button {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    background: url(../img/arrow-down.svg) right;
+    background-repeat: no-repeat;
+    background-size: 30px 15px;
+    color: #707070;
+    width: 100%;
+    border: 1px solid #ced4da;
+    text-align: left;
+}
+
+.title p span {
+    font-size: 10px;
+}
+
+section {
+    flex-grow: 1;
+}
+
+.file-drop-area {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 450px;
+    max-width: 100%;
+    padding: 25px;
+    border: 2px dashed rgb(46, 129, 3);
+    background-color: rgba(46, 129, 3, 0.06);
+    border-radius: 3px;
+    transition: 0.2s;
+}
+
+.file-drop-area.is-active {
+    background-color: rgba(46, 129, 3, 0.05);
+}
+
+.cloud-icon {
+    color: #2e8103;
+    font-size: 25px;
+    margin-right: 20px;
+}
+
+.file-msg {
+    width: 85%;
+    font-size: small;
+    font-weight: 300;
+    line-height: 1.4;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
+.file-input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.file-input:focus {
+    outline: none;
+}
+
+@media (max-width: 1201px) {
+    .sell .title {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 991px) {
+    .sell .container {
+        padding: 0 15px;
+    }
+    .file-drop-area {
+        justify-content: center;
+    }
+    .file-msg {
+        display: none;
+    }
+    .cloud-icon {
+        margin: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .file-msg {
+        display: block
+    }
+    .cloud-icon {
+        margin-right: 25px;
+    }
+}
+
+@media (max-width: 420px) {
+    .file-msg {
+        display: none
+    }
+    .cloud-icon {
+        margin: 0;
+    }
+}

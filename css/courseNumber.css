@@ -1,0 +1,90 @@
+/* .course-number {
+    height: calc(100vh - px);
+} */
+
+.department {
+    position: relative;
+}
+
+.department p {
+    font-size: 12px;
+    color: #C0C0C0;
+    position: absolute;
+    top: 22px;
+    white-space: nowrap;
+}
+
+.course-number-search button {
+    background-color: #2e8103;
+    border-color: #2e8103;
+    width: 150px;
+}
+
+.course-number-search button:hover {
+    background-color: #266b02;
+    border-color: #266b02;
+}
+
+.department-input {
+    margin-left: -60px;
+}
+
+.c-number-input {
+    margin-left: -50px;
+}
+
+.c-number {
+    align-self: flex-end;
+}
+
+@media (max-width: 1201px) {
+    .department-input {
+        margin-left: -30px;
+    }
+    .c-number-input {
+        margin-left: -20px;
+    }
+}
+
+@media (max-width: 991px) {
+    .department-input {
+        margin-left: 10px;
+    }
+    .c-number-input {
+        margin-left: -20px;
+        line-height: 1.3
+    }
+    .course-number-search button {
+        width: 93px;
+    }
+    .c-number {
+        line-height: 1.2;
+    }
+}
+
+@media (max-width: 768px) {
+    .course-number-search button {
+        margin-top: 15px;
+        width: 150px;
+    }
+    .department,
+    .department-input {
+        margin-bottom: 15px;
+        margin-left: 0px;
+    }
+    .department,
+    .c-number {
+        padding-left: 17px
+    }
+    .c-number {
+        align-self: flex-end;
+        line-height: 1.1;
+    }
+    .c-number-input {
+        margin-left: 0px;
+    }
+    .course-number-search {
+        display: flex;
+        justify-content: flex-end;
+    }
+}

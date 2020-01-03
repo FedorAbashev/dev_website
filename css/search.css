@@ -1,0 +1,59 @@
+#sort-by {
+    border-right: 1px solid #ced4da
+}
+
+.search-results {
+    margin-top: 30px
+}
+
+.sort-by-title {
+    justify-content: flex-end;
+}
+
+.search-number {
+    font-weight: bold
+}
+
+.results {
+    margin-top: 30px;
+}
+
+.results .row img {
+    min-width: 100%;
+    min-height: 150px;
+    background-color: #234F0C;
+}
+
+.recent-items {
+    margin: 15px 0;
+}
+
+.buy-now-btn {
+    width: 96px;
+    height: 24px;
+    background-color: #2E8103;
+    color: white;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    font-size: 14px;
+    padding: 0;
+}
+
+.btn:hover {
+    color: white
+}
+
+@media only screen and (max-width: 525px) {
+    .search-results label {
+        font-size: 14px;
+        white-space: nowrap
+    }
+    #sort-by {
+        font-size: 14px;
+        padding: 2px 10px;
+        max-height: 35px;
+    }
+}
