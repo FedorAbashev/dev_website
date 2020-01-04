@@ -31,7 +31,7 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-md-2 col-sm-3 col-5 remove-padding-right">
-                                <select id="category-select" class="custom-select">
+                                <select id="category-select" class="custom-select" onchange='saveValue(this);'>
                                     <option selected value=0>All</option>
                                     <option value="1">Books</option>
                                     <option value="2">Electronics</option>
@@ -42,7 +42,7 @@
                             </div>
                             <div class="col-md-10 col-sm-9 col-7 remove-padding-left">
                                 <form class="form-inline md-form form-md">
-                                    <input id="search-bar-input" class="form-control form-control-md w-100" type="text" placeholder="Search" aria-label="Search">
+                                    <input id="search-bar-input" class="form-control form-control-md w-100" type="text" placeholder="Search" aria-label="Search" onkeyup='saveValue(this);'>
                                     <a class='search-link' href="">
                                         <div class="search-icon"><i class="fas fa-search" aria-hidden="true"></i></div>
                                     </a>
@@ -264,6 +264,23 @@
         <script src="js/popper.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/index.js"></script>
+        <script type="text/javascript">
+            document.getElementById("category-select").value = getSavedValue("category-select");
+            document.getElementById("search-bar-input").value = getSavedValue("search-bar-input");
+            
+            function saveValue(e){
+                var id = e.id;
+                var val = e.value;
+                localStorage.setItem(id, val);
+            }
+
+            function getSavedValue(v){
+                if (!localStorage.getItem(v)) {
+                    return "";
+                }
+                return localStorage.getItem(v);
+            }
+        </script>        
     </div>
 </body>
 
